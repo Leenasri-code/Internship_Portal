@@ -1,0 +1,9 @@
+{
+  "countries": [
+    {"name": "India", "phone_code": "+91", "phone_length": 10, "cities": ["Mumbai", "Delhi", "Bangalore", "Hyderabad", "Chennai", "Kolkata", "Pune", "Ahmedabad", "Kochi", "Coimbatore"]},
+    {"name": "USA", "phone_code": "+1", "phone_length": 10, "cities": ["New York", "Los Angeles", "Chicago", "Houston", "San Francisco"]},
+    {"name": "UK", "phone_code": "+44", "phone_length": 10, "cities": ["London", "Manchester", "Birmingham", "Edinburgh"]},
+    {"name": "Australia", "phone_code": "+61", "phone_length": 9, "cities": ["Sydney", "Melbourne", "Brisbane", "Perth"]},
+    {"name": "Japan", "phone_code": "+81", "phone_length": 10, "cities": ["Tokyo", "Osaka", "Kyoto", "Nagoya"]}
+  ]
+}

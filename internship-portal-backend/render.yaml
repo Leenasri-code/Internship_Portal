@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: internship-portal-api
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn wsgi:app --bind 0.0.0.0:$PORT --workers 2 --timeout 60
+    healthCheckPath: /api/health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.7
+      - key: APP_ENV
+        value: production
+      - key: SECRET_KEY
+        generateValue: true
+      - key: MONGODB_URI
+        sync: false          # paste your Atlas connection string in the Render dashboard
+      - key: MONGODB_DB
+        value: internship_portal
+      - key: CORS_ORIGINS
+        sync: false          # e.g. https://your-frontend.onrender.com
+      - key: AUTO_SEED
+        value: "true"

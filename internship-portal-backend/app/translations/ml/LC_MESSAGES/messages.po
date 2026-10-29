@@ -1,0 +1,290 @@
+# Malayalam translations for PROJECT.
+# Copyright (C) 2025 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2025-09-11 10:53+0530\n"
+"PO-Revision-Date: 2025-09-11 10:54+0530\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ml\n"
+"Language-Team: ml <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+#: templates/login.html:6
+msgid "Login - Internship Portal"
+msgstr "പ്രവേശനം - ഇന്റേൺഷിപ്പ് പോർട്ടൽ"
+#: templates/login.html:14
+msgid "Find the best internships"
+msgstr "മികച്ച ഇന്റേൺഷിപ്പുകൾ കണ്ടെത്തൂ"
+#: templates/login.html:15
+msgid "Personalized recommendations • Track applications • Skill tests"
+msgstr "വ്യക്തിഗത ശുപാർശകൾ • അപേക്ഷകൾ പിന്തുടരുക • കഴിവ് പരീക്ഷകൾ"
+#: templates/login.html:16 templates/register.html:16
+msgid "Internship"
+msgstr "ഇന്റേൺഷിപ്പ്"
+#: templates/login.html:19 templates/menu.html:14 templates/profile.html:22
+#: templates/register.html:19
+msgid "Internship Portal"
+msgstr "ഇന്റേൺഷിപ്പ് പോർട്ടൽ"
+#: templates/login.html:20
+msgid "Welcome Back"
+msgstr "മടങ്ങി സ്വാഗതം"
+#: templates/login.html:29
+msgid "Username or Email:"
+msgstr "ഉപയോക്തൃനാമം അല്ലെങ്കിൽ ഇമെയിൽ:"
+#: templates/login.html:31
+msgid "Password:"
+msgstr "പാസ്വേഡ്:"
+#: templates/login.html:33
+msgid "Log In"
+msgstr "പ്രവേശിക്കുക"
+#: templates/login.html:35
+msgid "New here?"
+msgstr "പുതിയവരായോ?"
+#: templates/login.html:35
+msgid "Register now"
+msgstr "ഇപ്പോൾ രജിസ്റ്റർ ചെയ്യുക"
+#: templates/menu.html:6
+msgid "Main Menu - Internship Portal"
+msgstr "പ്രധാന മെൻു - ഇന്റേൺഷിപ്പ് പോർട്ടൽ"
+#: templates/menu.html:18 templates/profile.html:27
+msgid "Dashboard"
+msgstr "ഡാഷ്ബോർഡ്"
+#: templates/menu.html:21 templates/profile.html:30
+msgid "Profile"
+msgstr "പ്രൊഫൈൽ"
+#: templates/menu.html:24 templates/profile.html:33
+msgid "Assessment Test"
+msgstr "അസസ്‌മെന്റ് ടെസ്റ്റ്"
+#: templates/menu.html:25 templates/profile.html:36
+msgid "Application Management"
+msgstr "അപ്ലിക്കേഷൻ മാനേജ്മെന്റ്"
+#: templates/menu.html:26 templates/profile.html:39
+msgid "Private Internships"
+msgstr "സ്വകാര്യ ഇന്റേൺഷിപ്പുകൾ"
+#: templates/menu.html:27 templates/profile.html:42
+msgid "Government Internships"
+msgstr "സാർവജനം ഇന്റേൺഷിപ്പുകൾ"
+#: templates/menu.html:28 templates/profile.html:45
+msgid "Logout"
+msgstr "ലോഗ്ഔട്ട്"
+#: templates/menu.html:35 templates/profile.html:54
+msgid "Welcome,"
+msgstr "സ്വാഗതം,"
+#: templates/menu.html:39
+msgid "Top picks for you"
+msgstr "നിങ്ങൾക്കായി എടുത്തെടുത്ത തസ്തികകൾ"
+#: templates/menu.html:40
+msgid "Handpicked roles to match your skills"
+msgstr "നിങ്ങളുടെ കഴിവുകൾക്ക് അനുയോജ്യമായ തെരഞ്ഞെടുക്കപ്പെട്ട റോളുകൾ"
+#: templates/menu.html:44
+msgid "Recommended"
+msgstr "ശുപാർശചെയ്തത്"
+#: templates/menu.html:44
+msgid "Based on your profile"
+msgstr "നിങ്ങളുടെ പ്രൊഫൈലിന്റെ അടിസ്ഥാനത്തിൽ"
+#: templates/menu.html:48
+msgid "Applied"
+msgstr "അപ്ലൈ ചെയ്‌തത്"
+#: templates/menu.html:48
+msgid "Applications in progress"
+msgstr "അപ്ലിക്കേഷനുകൾ പുരോഗമിക്കുന്നു"
+#: templates/menu.html:52
+msgid "Shortlisted"
+msgstr "ഷോർട്ട്‌ലിസ്റ്റ് ചെയ്‌തത്"
+#: templates/menu.html:52
+msgid "Interview invites"
+msgstr "സাক্ষात्कार ക്ഷണങ്ങൾ"
+#: templates/menu.html:55
+msgid "Search internships, companies, locations..."
+msgstr "ഇന്റേൺഷിപ്പുകൾ, കമ്പിനികൾ, സ്ഥലങ്ങൾ തിരയുക..."
+#: templates/menu.html:56
+msgid "Search"
+msgstr "തിരയുക"
+#: templates/menu.html:66
+msgid "Select a menu item to see content here."
+msgstr "ഇവിടെ ഉള്ളടക്കം കാണാൻ ഒരു മെനു ഐറ്റം തിരഞ്ഞെടുക്കുക."
+#: templates/profile.html:6
+msgid "Internship Portal Profile"
+msgstr "ഇന്റേൺഷിപ്പ് പോർട്ടൽ പ്രൊഫൈൽ"
+#: templates/profile.html:54
+msgid "User"
+msgstr "ഉപയോക്താവ്"
+#: templates/profile.html:64
+msgid "Profile Pic"
+msgstr "പ്രൊഫൈൽ ചിത്രം"
+#: templates/profile.html:74
+msgid "Change Photo"
+msgstr "ഫോട്ടോ മാറ്റുക"
+#: templates/profile.html:78
+msgid "Jenny Wilson"
+msgstr "ജെന്നി വില്സൺ"
+#: templates/profile.html:83
+msgid "New York, USA"
+msgstr "ന്യൂയോർക്ക്, യു.എസ്.എ."
+#: templates/profile.html:84
+msgid "XYZ University"
+msgstr "എക്‌സ് വൈ സ് യൂണിവേഴ്‌സിറ്റി"
+#: templates/profile.html:88
+msgid "Specializations"
+msgstr "സ്പെഷ്യലൈസേഷനുകൾ"
+#: templates/profile.html:95
+msgid "Add a skill"
+msgstr "ഒരു കഴിവ് ചേർക്കുക"
+#: templates/profile.html:100
+msgid "Add Skill"
+msgstr "കഴിവു ചേർക്കുക"
+#: templates/profile.html:108
+msgid "Account Details"
+msgstr "അക്കൗണ്ട് വിവരം"
+#: templates/profile.html:112
+msgid "Username"
+msgstr "ഉപയോക്തൃനാമം"
+#: templates/profile.html:113
+msgid "Enter username"
+msgstr "ഉപയോക്തൃനാമം നൽകുക"
+#: templates/profile.html:116
+msgid "Email address"
+msgstr "ഇമെയിൽ വിലാസം"
+#: templates/profile.html:117
+msgid "Enter your email"
+msgstr "നിങ്ങളുടെ ഇമെയിൽ നൽകുക"
+#: templates/profile.html:120 templates/profile.html:121
+msgid "First name"
+msgstr "ആദ്യ പേരം"
+#: templates/profile.html:124 templates/profile.html:125
+msgid "Last name"
+msgstr "അവസാന പേര്"
+#: templates/profile.html:128
+msgid "Country"
+msgstr "ദേശം"
+#: templates/profile.html:130
+msgid "Select a country"
+msgstr "ഒരു നഗരം തിരഞ്ഞെടുക്കുക"
+#: templates/profile.html:131
+msgid "India"
+msgstr "ഇന്ത്യ"
+#: templates/profile.html:132
+msgid "USA"
+msgstr "യു.എസ്.എ."
+#: templates/profile.html:133
+msgid "UK"
+msgstr "യു.കെ."
+#: templates/profile.html:134
+msgid "Australia"
+msgstr "ഓസ്ട്രേലിയ"
+#: templates/profile.html:135
+msgid "Japan"
+msgstr "ജപ്പാൻ"
+#: templates/profile.html:139
+msgid "City"
+msgstr "നഗരം"
+#: templates/profile.html:141
+msgid "Select a city"
+msgstr "ഒരു നഗരം തിരഞ്ഞെടുക്കുക"
+#: templates/profile.html:145
+msgid "Country Code"
+msgstr "രാജ്യ കോഡ്"
+#: templates/profile.html:147
+msgid "India (+91)"
+msgstr "ഇന്ത്യ (+91)"
+#: templates/profile.html:148
+msgid "USA (+1)"
+msgstr "യു.എസ്.എ. (+1)"
+#: templates/profile.html:149
+msgid "UK (+44)"
+msgstr "യു.കെ. (+44)"
+#: templates/profile.html:150
+msgid "Australia (+61)"
+msgstr "ഓസ്ട്രേലിയ (+61)"
+#: templates/profile.html:151
+msgid "Japan (+81)"
+msgstr "ജപ്പാൻ (+81)"
+#: templates/profile.html:155
+msgid "Phone Number"
+msgstr "ഫോൺ നമ്പർ"
+#: templates/profile.html:160
+msgid "Enter phone number"
+msgstr "ഫോൺ നമ്പർ നൽകുക"
+#: templates/profile.html:166
+msgid "University/College"
+msgstr "സര്‍വ്വകലാശാല/കാലജ്"
+#: templates/profile.html:167
+msgid "University or College"
+msgstr "സര്‍വ്വകലാശാല അല്ലെങ്കില്‍ കാലജ്"
+#: templates/profile.html:170 templates/profile.html:171
+msgid "Degree"
+msgstr "ഡിഗ്രി"
+#: templates/profile.html:174 templates/profile.html:175
+msgid "Field of Study"
+msgstr "പഠനശ്രമഭാഗം"
+#: templates/profile.html:178 templates/profile.html:183
+msgid "Graduation Year"
+msgstr "സ्नാതക വർഷം"
+#: templates/profile.html:190
+msgid "LinkedIn Profile URL"
+msgstr "ലിങ്ക്ഡിൻ പ്രൊഫൈൽ URL"
+#: templates/profile.html:195
+msgid "https://linkedin.com/in/username"
+msgstr "https://linkedin.com/in/username"
+#: templates/profile.html:199
+msgid "Portfolio/Website URL"
+msgstr "പോർട്ട്ഫോളിയോ/വെബ്‌സൈറ്റ് URL"
+#: templates/profile.html:200
+msgid "https://yourportfolio.com"
+msgstr "https://yourportfolio.com"
+#: templates/profile.html:203
+msgid "Short Bio / About Me"
+msgstr "ചുരുക്കപ്പെട്ട ജീവചരിത്രം / എനിക്ക് കുറിച്ച്"
+#: templates/profile.html:204
+msgid "Write something about yourself"
+msgstr "നിങ്ങളെ കുറിച്ച് എന്തെങ്കിലും എഴുതുക"
+#: templates/profile.html:207
+msgid "Save changes"
+msgstr "മാറ്റങ്ങൾ സംരക്ഷിക്കുക"
+#: templates/register.html:6
+msgid "Register - Internship Portal"
+msgstr "രജിസ്റ്റർ - ഇന്റേൺഷിപ്പ് പോർട്ടൽ"
+#: templates/register.html:14
+msgid "Join Internship Portal"
+msgstr "ഇന്റേൺഷിപ്പ് പോർട്ടലിൽ ചേർക്കൂ"
+#: templates/register.html:15
+msgid "Create your account to access personalized internship recommendations and more."
+msgstr "വ്യക്തിഗത ഇന്റേൺഷിപ്പ് ശുപാർശകൾക്കും മറ്റും പ്രവേശിക്കാനായി നിങ്ങളുടെ അക്കൗണ്ട് സൃഷ്‌ടിക്കുക."
+#: templates/register.html:20
+msgid "Create Account"
+msgstr "അക്കൗണ്ട് സൃഷ്‌ടിക്കുക"
+#: templates/register.html:29
+msgid "Username or Email"
+msgstr "ഉപയോക്തൃനാമം അല്ലെങ്കിൽ ഇമെയിൽ"
+#: templates/register.html:30
+msgid "Enter your username or email"
+msgstr "നിങ്ങളുടെ ഉപയോക്തൃനാമം അല്ലെങ്കിൽ ഇമെയിൽ നൽകുക"
+#: templates/register.html:31
+msgid "Password"
+msgstr "പാസ്വേഡ്"
+#: templates/register.html:32
+msgid "Enter password"
+msgstr "പാസ്വേഡ് നൽകുക"
+#: templates/register.html:33
+msgid "Confirm Password"
+msgstr "പാസ്വേഡ് സ്ഥിരീകരിക്കുക"
+#: templates/register.html:34
+msgid "Confirm password"
+msgstr "പാസ്വേഡ് സ്ഥിരീകരിക്കുക"
+#: templates/register.html:35
+msgid "Register"
+msgstr "രജിസ്റ്റർ ചെയ്യുക"
+#: templates/register.html:37
+msgid "Already have an account?"
+msgstr "ഇതിനുമുന്‍പ് ഒരു അക്കൌണ്ട് ഉണ്ടോ?"
+#: templates/register.html:37
+msgid "Login here"
+msgstr "ഇവിടെ ലോഗിന്‍ ചെയ്യുക"

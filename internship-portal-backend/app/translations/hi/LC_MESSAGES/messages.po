@@ -1,0 +1,290 @@
+# Hindi translations for PROJECT.
+# Copyright (C) 2025 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2025-09-11 10:53+0530\n"
+"PO-Revision-Date: 2025-09-11 10:53+0530\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: hi\n"
+"Language-Team: hi <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+#: templates/login.html:6
+msgid "Login - Internship Portal"
+msgstr "लॉगिन - इंटर्नशिप पोर्टल"
+#: templates/login.html:14
+msgid "Find the best internships"
+msgstr "सर्वश्रेष्ठ इंटर्नशिप खोजें"
+#: templates/login.html:15
+msgid "Personalized recommendations • Track applications • Skill tests"
+msgstr "व्यक्तिगत सिफारिशें • आवेदन ट्रैक करें • कौशल परीक्षण"
+#: templates/login.html:16 templates/register.html:16
+msgid "Internship"
+msgstr "इंटर्नशिप"
+#: templates/login.html:19 templates/menu.html:14 templates/profile.html:22
+#: templates/register.html:19
+msgid "Internship Portal"
+msgstr "इंटर्नशिप पोर्टल"
+#: templates/login.html:20
+msgid "Welcome Back"
+msgstr "वापसी पर स्वागत है"
+#: templates/login.html:29
+msgid "Username or Email:"
+msgstr "उपयोगकर्ता नाम या ईमेल:"
+#: templates/login.html:31
+msgid "Password:"
+msgstr "पासवर्ड:"
+#: templates/login.html:33
+msgid "Log In"
+msgstr "लॉग इन करें"
+#: templates/login.html:35
+msgid "New here?"
+msgstr "नए हैं?"
+#: templates/login.html:35
+msgid "Register now"
+msgstr "अभी पंजीकरण करें"
+#: templates/menu.html:6
+msgid "Main Menu - Internship Portal"
+msgstr "मुख्य मेनू - इंटर्नशिप पोर्टल"
+#: templates/menu.html:18 templates/profile.html:27
+msgid "Dashboard"
+msgstr "डैशबोर्ड"
+#: templates/menu.html:21 templates/profile.html:30
+msgid "Profile"
+msgstr "प्रोफ़ाइल"
+#: templates/menu.html:24 templates/profile.html:33
+msgid "Assessment Test"
+msgstr "मूल्यांकन परीक्षा"
+#: templates/menu.html:25 templates/profile.html:36
+msgid "Application Management"
+msgstr "आवेदन प्रबंधन"
+#: templates/menu.html:26 templates/profile.html:39
+msgid "Private Internships"
+msgstr "प्राइवेट इंटर्नशिप"
+#: templates/menu.html:27 templates/profile.html:42
+msgid "Government Internships"
+msgstr "सरकारी इंटर्नशिप"
+#: templates/menu.html:28 templates/profile.html:45
+msgid "Logout"
+msgstr "लॉग आउट"
+#: templates/menu.html:35 templates/profile.html:54
+msgid "Welcome,"
+msgstr "स्वागत है,"
+#: templates/menu.html:39
+msgid "Top picks for you"
+msgstr "आपके लिए चुनिंदा विकल्प"
+#: templates/menu.html:40
+msgid "Handpicked roles to match your skills"
+msgstr "आपके कौशल के अनुसार चुने गए रोल"
+#: templates/menu.html:44
+msgid "Recommended"
+msgstr "अनुशंसित"
+#: templates/menu.html:44
+msgid "Based on your profile"
+msgstr "आपकी प्रोफ़ाइल के आधार पर"
+#: templates/menu.html:48
+msgid "Applied"
+msgstr "आवेदन किया गया"
+#: templates/menu.html:48
+msgid "Applications in progress"
+msgstr "प्रगति में आवेदन"
+#: templates/menu.html:52
+msgid "Shortlisted"
+msgstr "शॉर्टलिस्टेड"
+#: templates/menu.html:52
+msgid "Interview invites"
+msgstr "साक्षात्कार के निमंत्रण"
+#: templates/menu.html:55
+msgid "Search internships, companies, locations..."
+msgstr "इंटर्नशिप, कंपनियां, स्थान खोजें..."
+#: templates/menu.html:56
+msgid "Search"
+msgstr "खोजें"
+#: templates/menu.html:66
+msgid "Select a menu item to see content here."
+msgstr "सामग्री देखने के लिए एक मेनू आइटम चुनें।"
+#: templates/profile.html:6
+msgid "Internship Portal Profile"
+msgstr "इंटर्नशिप पोर्टल प्रोफ़ाइल"
+#: templates/profile.html:54
+msgid "User"
+msgstr "उपयोगकर्ता"
+#: templates/profile.html:64
+msgid "Profile Pic"
+msgstr "प्रोफ़ाइल चित्र"
+#: templates/profile.html:74
+msgid "Change Photo"
+msgstr "फ़ोटो बदलें"
+#: templates/profile.html:78
+msgid "Jenny Wilson"
+msgstr "जेनी विल्सन"
+#: templates/profile.html:83
+msgid "New York, USA"
+msgstr "न्यू यॉर्क, यूएसए"
+#: templates/profile.html:84
+msgid "XYZ University"
+msgstr "एक्सवाईजेड विश्वविद्यालय"
+#: templates/profile.html:88
+msgid "Specializations"
+msgstr "विशेषज्ञताएं"
+#: templates/profile.html:95
+msgid "Add a skill"
+msgstr "एक कौशल जोड़ें"
+#: templates/profile.html:100
+msgid "Add Skill"
+msgstr "कौशल जोड़ें"
+#: templates/profile.html:108
+msgid "Account Details"
+msgstr "खाता विवरण"
+#: templates/profile.html:112
+msgid "Username"
+msgstr "उपयोगकर्ता नाम"
+#: templates/profile.html:113
+msgid "Enter username"
+msgstr "उपयोगकर्ता नाम दर्ज करें"
+#: templates/profile.html:116
+msgid "Email address"
+msgstr "ईमेल पता"
+#: templates/profile.html:117
+msgid "Enter your email"
+msgstr "अपना ईमेल दर्ज करें"
+#: templates/profile.html:120 templates/profile.html:121
+msgid "First name"
+msgstr "पहला नाम"
+#: templates/profile.html:124 templates/profile.html:125
+msgid "Last name"
+msgstr "अंतिम नाम"
+#: templates/profile.html:128
+msgid "Country"
+msgstr "देश"
+#: templates/profile.html:130
+msgid "Select a country"
+msgstr "देश चुनें"
+#: templates/profile.html:131
+msgid "India"
+msgstr "भारत"
+#: templates/profile.html:132
+msgid "USA"
+msgstr "यूएसए"
+#: templates/profile.html:133
+msgid "UK"
+msgstr "यूनाइटेड किंगडम"
+#: templates/profile.html:134
+msgid "Australia"
+msgstr "ऑस्ट्रेलिया"
+#: templates/profile.html:135
+msgid "Japan"
+msgstr "जापान"
+#: templates/profile.html:139
+msgid "City"
+msgstr "शहर"
+#: templates/profile.html:141
+msgid "Select a city"
+msgstr "शहर चुनें"
+#: templates/profile.html:145
+msgid "Country Code"
+msgstr "देश कोड"
+#: templates/profile.html:147
+msgid "India (+91)"
+msgstr "भारत (+91)"
+#: templates/profile.html:148
+msgid "USA (+1)"
+msgstr "यूएसए (+1)"
+#: templates/profile.html:149
+msgid "UK (+44)"
+msgstr "यूनाइटेड किंगडम (+44)"
+#: templates/profile.html:150
+msgid "Australia (+61)"
+msgstr "ऑस्ट्रेलिया (+61)"
+#: templates/profile.html:151
+msgid "Japan (+81)"
+msgstr "जापान (+81)"
+#: templates/profile.html:155
+msgid "Phone Number"
+msgstr "फ़ोन नंबर"
+#: templates/profile.html:160
+msgid "Enter phone number"
+msgstr "फोन नंबर दर्ज करें"
+#: templates/profile.html:166
+msgid "University/College"
+msgstr "विश्वविद्यालय/कॉलेज"
+#: templates/profile.html:167
+msgid "University or College"
+msgstr "विश्वविद्यालय या कॉलेज"
+#: templates/profile.html:170 templates/profile.html:171
+msgid "Degree"
+msgstr "डिग्री"
+#: templates/profile.html:174 templates/profile.html:175
+msgid "Field of Study"
+msgstr "अध्ययन का क्षेत्र"
+#: templates/profile.html:178 templates/profile.html:183
+msgid "Graduation Year"
+msgstr "स्नातक वर्ष"
+#: templates/profile.html:190
+msgid "LinkedIn Profile URL"
+msgstr "लिंक्डइन प्रोफ़ाइल यूआरएल"
+#: templates/profile.html:195
+msgid "https://linkedin.com/in/username"
+msgstr "https://linkedin.com/in/username"
+#: templates/profile.html:199
+msgid "Portfolio/Website URL"
+msgstr "पोर्टफोलियो/वेबसाइट यूआरएल"
+#: templates/profile.html:200
+msgid "https://yourportfolio.com"
+msgstr "https://yourportfolio.com"
+#: templates/profile.html:203
+msgid "Short Bio / About Me"
+msgstr "संक्षिप्त परिचय / मेरे बारे में"
+#: templates/profile.html:204
+msgid "Write something about yourself"
+msgstr "अपने बारे में कुछ लिखें"
+#: templates/profile.html:207
+msgid "Save changes"
+msgstr "परिवर्तन सहेजें"
+#: templates/register.html:6
+msgid "Register - Internship Portal"
+msgstr "पंजीकरण - इंटर्नशिप पोर्टल"
+#: templates/register.html:14
+msgid "Join Internship Portal"
+msgstr "इंटर्नशिप पोर्टल से जुड़ें"
+#: templates/register.html:15
+msgid "Create your account to access personalized internship recommendations and more."
+msgstr "व्यक्तिगत इंटर्नशिप सिफारिशों और अधिक तक पहुंचने के लिए अपना खाता बनाएं।"
+#: templates/register.html:20
+msgid "Create Account"
+msgstr "खाता बनाएं"
+#: templates/register.html:29
+msgid "Username or Email"
+msgstr "उपयोगकर्ता नाम या ईमेल"
+#: templates/register.html:30
+msgid "Enter your username or email"
+msgstr "अपना उपयोगकर्ता नाम या ईमेल दर्ज करें"
+#: templates/register.html:31
+msgid "Password"
+msgstr "पासवर्ड"
+#: templates/register.html:32
+msgid "Enter password"
+msgstr "पासवर्ड दर्ज करें"
+#: templates/register.html:33
+msgid "Confirm Password"
+msgstr "पासवर्ड पुष्टि करें"
+#: templates/register.html:34
+msgid "Confirm password"
+msgstr "पासवर्ड की पुष्टि करें"
+#: templates/register.html:35
+msgid "Register"
+msgstr "रजिस्टर करें"
+#: templates/register.html:37
+msgid "Already have an account?"
+msgstr "क्या आपका पहले से खाता है?"
+#: templates/register.html:37
+msgid "Login here"
+msgstr "यहाँ लॉगिन करें"

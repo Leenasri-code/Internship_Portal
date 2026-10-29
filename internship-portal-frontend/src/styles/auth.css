@@ -1,0 +1,33 @@
+/* Login / register - from the original static/main_menu/login.css, scoped to `.auth-page`. */
+.auth-page {
+  --accent: #06b6d4;
+  --bg: #f3f6fb;
+  --muted: #6b7280;
+  --radius: 12px;
+  min-height: 100vh;
+  background: var(--bg);
+  font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #111827;
+}
+.auth-page .page-center { display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 20px; }
+.auth-page .login-card { display: flex; max-width: 900px; width: 100%; background: #fff; box-shadow: 0 12px 40px rgba(2,6,23,.08); border-radius: var(--radius); overflow: hidden; }
+.auth-page .login-left, .auth-page .login-right { flex: 1; padding: 32px; min-width: 0; }
+.auth-page .login-left { background: linear-gradient(180deg, #dbeafe, #cffafe); display: flex; flex-direction: column; gap: 12px; justify-content: center; }
+.auth-page .login-left h2 { font-family: 'Montserrat', 'Segoe UI', sans-serif; font-size: 1.6rem; color: #0f172a; margin: 0; }
+.auth-page .login-left p { color: var(--muted); margin-top: 0; }
+.auth-page .hero-img { width: 100%; border-radius: 8px; margin-top: 12px; object-fit: cover; }
+.auth-page .login-right h1.brand { margin: 0 0 12px; display: block; padding: 0; border: 0; font-size: 2em; font-weight: 700; }
+.auth-page .login-right h3 { margin: 8px 0 24px; }
+.auth-page .login-form label { display: block; margin-bottom: 6px; font-size: .9rem; color: var(--muted); }
+.auth-page .login-form input { width: 100%; padding: 10px 12px; margin-bottom: 18px; border: 1px solid rgba(2,6,23,.06); border-radius: 8px; font-size: 1rem; background: #fff; }
+.auth-page .login-form input:focus { outline: 2px solid rgba(6,182,212,.45); outline-offset: 0; }
+.auth-page .btn { cursor: pointer; border: none; border-radius: 10px; padding: 10px 14px; font-weight: 600; background: transparent; width: 100%; font-size: 1rem; }
+.auth-page .btn.primary { background: var(--accent); color: #fff; box-shadow: 0 6px 18px rgba(6,182,212,.12); }
+.auth-page .btn.primary:disabled { opacity: .7; cursor: wait; }
+.auth-page .muted { color: var(--muted); font-size: .95rem; }
+.auth-page a { color: var(--accent); text-decoration: none; }
+.auth-page a:hover { text-decoration: underline; }
+@media (max-width: 720px) {
+  .auth-page .login-card { flex-direction: column; }
+  .auth-page .login-left, .auth-page .login-right { padding: 20px; }
+}

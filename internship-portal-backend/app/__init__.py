@@ -29,29 +29,25 @@ def create_app(overrides=None):
     app.extensions["mongo_client"], app.extensions["mongo_db"] = client, db
 
   
-CORS(
-    app,
-    resources={
-        r"/api/*": {
-            "origins": app.config["CORS_ORIGINS"]
-        }
-    },
-    supports_credentials=True,
-    allow_headers=[
-        "Authorization",
-        "Content-Type",
-        "Accept-Language"
-    ],
-    methods=[
-        "GET",
-        "POST",
-        "PUT",
-        "PATCH",
-        "DELETE",
-        "OPTIONS"
-    ],
-    max_age=600
-)
+    CORS(
+        app,
+        resources={
+            r"/api/*": {
+                "origins": app.config["CORS_ORIGINS"]
+            }
+        },
+        supports_credentials=True,
+        allow_headers=[
+            "Authorization",
+            "Content-Type",
+            "Accept-Language"
+        ],
+        methods=[
+            "GET", "POST", "PUT", "PATCH",
+            "DELETE", "OPTIONS"
+        ],
+        max_age=600
+    )
 
 
     register_error_handlers(app)

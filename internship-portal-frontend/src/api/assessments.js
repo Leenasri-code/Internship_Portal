@@ -2,7 +2,6 @@ import api, { withFallback } from './client';
 import ENDPOINTS from './endpoints';
 import { assessmentTests } from '../data/assessmentTests';
 
-/** GET {API}/assessments -> [ { id, title, duration_minutes, questions:[{id,text,options:[{id,text}]}] } ] */
 export function getAssessments() {
   return withFallback(
     async () => {
@@ -13,38 +12,34 @@ export function getAssessments() {
   );
 }
 
-// Local grading (fallback only - when the backend grades, correct answers never need to ship to the browser).
-function gradeLocally(test, answers) {
-  const details = test.questions.map((q) => {
-    const userAnswer = answers[q.id] || null;
-    const correct = q.correct;
-    return {
-      question_id: q.id,
-      question: q.text,
-      user_answer: userAnswer,
-      user_answer_text: q.options.find((o) => o.id === userAnswer)?.text || null,
-      correct_answer: correct,
-      correct_answer_text: q.options.find((o) => o.id === correct)?.text || '',
-      is_correct: userAnswer === correct,
-    };
-  });
-  return {
-    score: details.filter((d) => d.is_correct).length,
-    total: details.length,
-    details,
-  };
+// Starts a server-tracked attempt. The backend returns a unique attempt_id and
+// the questions without exposing correct answers.
+export async function startAssessment(test) {
+  if (typeof test.id === 'number') {
+    // Local sample mode only: no server attempt exists for bundled sample data.
+    return { attempt_id: `local-${test.id}-${Date.now()}`, questions: test.questions, duration_minutes: test.duration_minutes, title: test.title, local: true };
+  }
+  const { data } = await api.post(ENDPOINTS.assessmentStart(test.id));
+  return data;
 }
 
-/**
- * POST {API}/assessments/:id/submit  { answers: { [questionId]: optionId } }
- * -> { score, total, details:[{question, user_answer, user_answer_text, correct_answer, correct_answer_text, is_correct}] }
- */
-export function submitAssessment(test, answers) {
-  return withFallback(
-    async () => {
-      const { data } = await api.post(ENDPOINTS.assessmentSubmit(test.id), { answers });
-      return data;
-    },
-    async () => gradeLocally(test, answers)
-  );
+export async function submitAssessment(test, attemptId, answers, local = false) {
+  if (local) {
+    const details = test.questions.map((q) => {
+      const userAnswer = answers[q.id] || null;
+      const correct = q.correct;
+      return {
+        question_id: q.id,
+        question: q.text,
+        user_answer: userAnswer,
+        user_answer_text: q.options.find((o) => o.id === userAnswer)?.text || null,
+        correct_answer: correct,
+        correct_answer_text: q.options.find((o) => o.id === correct)?.text || '',
+        is_correct: userAnswer === correct,
+      };
+    });
+    return { score: details.filter((d) => d.is_correct).length, total: details.length, details };
+  }
+  const { data } = await api.post(ENDPOINTS.assessmentSubmit(test.id), { attempt_id: attemptId, answers });
+  return data;
 }

@@ -50,6 +50,24 @@ def validate_assessment(data, partial=False):
                 clean_qs.append({"id": qid, "text": text, "options": [{"id": o["id"], "text": o["text"]} for o in opts],
                                  "correct": q.get("correct")})
         out["questions"] = clean_qs
+    if not partial or "company" in data:
+        company = data.get("company", "")
+        if not isinstance(company, str):
+            errors["company"] = "Must be text"
+        else:
+            out["company"] = company.strip()[:200]
+    if not partial or "round_name" in data:
+        round_name = data.get("round_name", "Aptitude Assessment")
+        if not isinstance(round_name, str) or not round_name.strip():
+            errors["round_name"] = "Must be non-empty text"
+        else:
+            out["round_name"] = round_name.strip()[:120]
+    if not partial or "round_order" in data:
+        order = data.get("round_order", 1)
+        if isinstance(order, bool) or not isinstance(order, int) or order < 1:
+            errors["round_order"] = "Must be a positive integer"
+        else:
+            out["round_order"] = order
     if "is_active" in data:
         out["is_active"] = bool(data["is_active"])
     if errors:
@@ -63,7 +81,9 @@ def public_questions(a):
 
 def summary(a, best=None):
     return {"id": str(a["_id"]), "title": a["title"], "duration_minutes": a["duration_minutes"],
-            "question_count": len(a["questions"]), "best_score": best}
+            "question_count": len(a["questions"]), "best_score": best,
+            "company": a.get("company", ""), "round_name": a.get("round_name", "Aptitude Assessment"),
+            "round_order": a.get("round_order", 1)}
 
 
 def grade(a, answers):

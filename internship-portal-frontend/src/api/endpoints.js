@@ -25,6 +25,7 @@ export const ENDPOINTS = {
   // Assessments (original page: /assessment)
   assessments: `${p}/assessments`,
   assessment: (id) => `${p}/assessments/${encodeURIComponent(id)}`,
+  assessmentStart: (id) => `${p}/assessments/${encodeURIComponent(id)}/start`,
   assessmentSubmit: (id) => `${p}/assessments/${encodeURIComponent(id)}/submit`,
 
   // Feedback (original page: /feedback)

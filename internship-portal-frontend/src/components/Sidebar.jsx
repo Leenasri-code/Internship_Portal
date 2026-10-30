@@ -1,8 +1,8 @@
+
 import { NavLink, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { useLanguage } from '../context/LanguageContext';
 
-// Same menu items, order and icons as the original sidebar.
 const ITEMS = [
   { to: '/main_menu', icon: 'fa-house', label: 'Dashboard' },
   { to: '/profile', icon: 'fa-user', label: 'Profile' },
@@ -10,9 +10,9 @@ const ITEMS = [
   { to: '/applications', icon: 'fa-folder-open', label: 'Application Management' },
   { to: '/private_internships', icon: 'fa-user-lock', label: 'Private Internships' },
   { to: '/government_internships', icon: 'fa-building-columns', label: 'Government Internships' },
+  { to: '/interview-feedback', icon: 'fa-comments', label: 'Interview Feedback' },
   { to: '/feedback', icon: 'fa-star', label: 'Feedback' },
 ];
-
 export default function Sidebar() {
   const { logout } = useAuth();
   const { t } = useLanguage();
@@ -20,9 +20,15 @@ export default function Sidebar() {
 
   const handleLogout = async () => {
     await logout();
+
     navigate('/login', {
       replace: true,
-      state: { flash: { category: 'success', message: 'Logged out successfully' } },
+      state: {
+        flash: {
+          category: 'success',
+          message: 'Logged out successfully'
+        }
+      }
     });
   };
 
@@ -32,6 +38,7 @@ export default function Sidebar() {
         <i className="fa-solid fa-briefcase" />
         <span>{t('Internship Portal')}</span>
       </div>
+
       <nav>
         <ul>
           {ITEMS.map((item) => (
@@ -39,15 +46,23 @@ export default function Sidebar() {
               <NavLink
                 to={item.to}
                 title={t(item.label)}
-                className={({ isActive }) => `side-link${isActive ? ' active' : ''}`}
+                className={({ isActive }) =>
+                  `side-link${isActive ? ' active' : ''}`
+                }
               >
                 <i className={`fa-solid ${item.icon}`} />
                 <span>{t(item.label)}</span>
               </NavLink>
             </li>
           ))}
+
           <li>
-            <button type="button" className="side-link side-button" onClick={handleLogout} title={t('Logout')}>
+            <button
+              type="button"
+              className="side-link side-button"
+              onClick={handleLogout}
+              title={t('Logout')}
+            >
               <i className="fa-solid fa-right-from-bracket" />
               <span>{t('Logout')}</span>
             </button>

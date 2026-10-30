@@ -1,3 +1,4 @@
+
 import { Navigate, Route, Routes } from 'react-router-dom';
 import AppLayout from './components/AppLayout';
 import ProtectedRoute from './components/ProtectedRoute';
@@ -12,18 +13,18 @@ import Applications from './pages/Applications';
 import PrivateInternships from './pages/PrivateInternships';
 import GovernmentInternships from './pages/GovernmentInternships';
 import Feedback from './pages/Feedback';
+import InterviewFeedback from './pages/InterviewFeedback';
 import NotFound from './pages/NotFound';
 
-// Route paths intentionally match the original Flask URLs.
 export default function App() {
   return (
     <Routes>
-      {/* public */}
+      {/* Public pages */}
       <Route path="/" element={<LanguageSelect />} />
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
 
-      {/* authenticated pages share the sidebar layout */}
+      {/* Protected pages */}
       <Route
         element={
           <ProtectedRoute>
@@ -38,12 +39,25 @@ export default function App() {
         <Route path="/private_internships" element={<PrivateInternships />} />
         <Route path="/government_internships" element={<GovernmentInternships />} />
         <Route path="/feedback" element={<Feedback />} />
+
+        {/* PATH-AI */}
+        <Route
+          path="/interview-feedback"
+          element={<InterviewFeedback />}
+        />
+
         <Route path="*" element={<NotFound />} />
       </Route>
 
-      {/* the original sub-pages linked to /dashboard, which never existed */}
-      <Route path="/dashboard" element={<Navigate to="/main_menu" replace />} />
-      <Route path="/logout" element={<Navigate to="/login" replace />} />
+      <Route
+        path="/dashboard"
+        element={<Navigate to="/main_menu" replace />}
+      />
+
+      <Route
+        path="/logout"
+        element={<Navigate to="/login" replace />}
+      />
     </Routes>
   );
 }

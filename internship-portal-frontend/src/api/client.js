@@ -6,7 +6,6 @@ import storage from '../utils/storage';
 const TOKEN_KEY = 'ip_auth_token';
 
 // One shared Axios instance for all backend requests.
-// Authentication is handled using JWT Bearer tokens, not Flask cookies.
 export const api = axios.create({
   baseURL: env.apiBaseUrl,
   withCredentials: false,
@@ -62,10 +61,17 @@ export function getErrorMessage(
       return data;
     }
 
-    if (data.error) {
-      return typeof data.error === 'string' ? data.error : fallback;
+    // Handle backend format: { error: { code, message } }
+    if (typeof data.error === 'object' && data.error !== null) {
+      return data.error.message || fallback;
     }
 
+    // Handle backend format: { error: "message" }
+    if (typeof data.error === 'string') {
+      return data.error;
+    }
+
+    // Handle backend format: { message: "message" }
     if (data.message) {
       return data.message;
     }

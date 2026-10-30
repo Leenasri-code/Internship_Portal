@@ -1,30 +1,26 @@
-import api from './client';
-import ENDPOINTS from './endpoints';
-import env from '../config/env';
-import storage from '../utils/storage';
 
-const DEMO_USER_KEY = 'ip_demo_user';
+const TOKEN_KEY = 'ip_auth_token';
 
 export async function login(username, password) {
   if (env.demoMode) {
-    // Demo mode: no backend. Nothing sensitive is stored (no password).
     storage.set(DEMO_USER_KEY, { username });
     return { username };
   }
-  const { data } = await api.post(ENDPOINTS.login, { username, password });
-  return { username: data?.username || username };
-}
 
-export async function register(username, password, confirmPassword) {
-  if (env.demoMode) {
-    return { message: 'Registration successful! Please login.' };
-  }
-  const { data } = await api.post(ENDPOINTS.register, {
+  const { data } = await api.post(ENDPOINTS.login, {
     username,
     password,
-    confirm_password: confirmPassword,
   });
-  return { message: data?.message || 'Registration successful! Please login.' };
+
+  if (!data?.token) {
+    throw new Error('Login response did not contain an authentication token.');
+  }
+
+  storage.set(TOKEN_KEY, data.token);
+
+  return {
+    username: data.user?.username || username,
+  };
 }
 
 export async function logout() {
@@ -32,19 +28,27 @@ export async function logout() {
     storage.remove(DEMO_USER_KEY);
     return;
   }
+
   try {
     await api.post(ENDPOINTS.logout);
   } catch {
-    // Even if the server call fails we still clear the local state.
+    // Clear local authentication even if logout request fails.
+  } finally {
+    storage.remove(TOKEN_KEY);
   }
 }
 
-/** Returns { username } when a session exists, otherwise null. */
 export async function fetchCurrentUser() {
-  if (env.demoMode) return storage.get(DEMO_USER_KEY, null);
+  if (env.demoMode) {
+    return storage.get(DEMO_USER_KEY, null);
+  }
+
   try {
     const { data } = await api.get(ENDPOINTS.me);
-    return data?.username ? { username: data.username } : null;
+
+    return data?.user?.username
+      ? { username: data.user.username }
+      : null;
   } catch (error) {
     if (error?.response?.status === 401) return null;
     throw error;
